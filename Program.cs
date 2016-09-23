@@ -23,34 +23,36 @@ namespace W3Day4Homework
 
         static void Main(string[] args)
         {
-            // Add Streamreader
-            string line = "To be, or not to be: that is the question.";
-            StringBuilder processedLine = new StringBuilder();
+            StreamReader reader = new StreamReader("..\\..\\RollerCoaster.txt");
 
-            // Add While loop to read file
-
-            bool firstOccurance = true;
-            for (int i= 0; i < line.Length; i++)                //read thru characters on line
+            while (!reader.EndOfStream)                             //Read thru file
             {
-                char character = line[i];
+                string line = reader.ReadLine();                    
+                StringBuilder processedLine = new StringBuilder();
 
-                if (char.IsLetter(line[i]))                     //char.isletter then change case
+                bool firstOccurance = true;
+
+                for (int i = 0; i < line.Length; i++)                //read thru characters on line
                 {
-                    if (firstOccurance == true)                 //first or second occurance of a letter
-                    {
-                        character = char.ToUpper(line[i]);
-                        firstOccurance = false;                  //changes state of first occurance
-                    }
-                    else
-                    {
-                        character = char.ToLower(line[i]);
-                        firstOccurance = true;
-                    }
-                }
-                processedLine.Append(character.ToString());
-            }
-            Console.WriteLine(processedLine);
+                    char character = line[i];
 
+                    if (char.IsLetter(line[i]))                     //Check if char is letter then change case
+                    {
+                        if (firstOccurance == true)                 //first or second occurance of a letter
+                        {
+                            character = char.ToUpper(line[i]);
+                            firstOccurance = false;                  //keeps track of alternating letters
+                        }
+                        else
+                        {
+                            character = char.ToLower(line[i]);
+                            firstOccurance = true;
+                        }
+                    }
+                    processedLine.Append(character.ToString());
+                }
+                Console.WriteLine(processedLine);
+            }
         }
     }
 }
