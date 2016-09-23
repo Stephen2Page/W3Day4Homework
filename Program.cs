@@ -29,20 +29,22 @@ namespace W3Day4Homework
 
             // Add While loop to read file
 
-            for (int i= 0; i < line.Length; i++)    //read thru characters on line
+            bool firstOccurance = true;
+            for (int i= 0; i < line.Length; i++)                //read thru characters on line
             {
-                bool firstOccurance = true;
                 char character = line[i];
 
                 if (char.IsLetter(line[i]))                     //char.isletter then change case
                 {
-                    if (firstOccurance == true)   //first or second occurance
+                    if (firstOccurance == true)                 //first or second occurance of a letter
                     {
                         character = char.ToUpper(line[i]);
+                        firstOccurance = false;                  //changes state of first occurance
                     }
                     else
                     {
                         character = char.ToLower(line[i]);
+                        firstOccurance = true;
                     }
                 }
                 processedLine.Append(character.ToString());
