@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\W3Day4Homework\W3Day4Homework\bin\Debug\W3Day4Homework.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\W3Day4Homework\W3Day4Homework\bin\Debug\W3Day4Homework.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\W3Day4Homework\W3Day4Homework\bin\Debug\W3Day4Homework.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\W3Day4Homework\W3Day4Homework\obj\Debug\W3Day4Homework.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\W3Day4Homework\W3Day4Homework\obj\Debug\W3Day4Homework.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\W3Day4Homework\W3Day4Homework\obj\Debug\W3Day4Homework.pdb
